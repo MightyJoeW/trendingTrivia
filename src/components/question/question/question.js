@@ -1,8 +1,10 @@
-angular.module('app')
-.controller('questionCtrl', function($scope, mainSrvc){
-    $scope.test = "connected"
-    mainSrvc.getPackages().then(response => {
-        $scope.questions = response.data
-        
-    })
+angular.module('app').component('question', {
+    templateUrl: './../../../question.html',
+    controllerAs: 'questionCtrl',
+    controller: function questionComp(mainSrvc, $state) {
+        mainSrvc.getQuestions().then(response => {
+            this.questions = response.data
+            console.log(response.data)
+        })
+    }
 })
