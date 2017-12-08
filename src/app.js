@@ -1,9 +1,9 @@
 angular.module("app", ['ui.router']).config(function($stateProvider, $urlRouterProvider){
     $stateProvider
         .state({
-            name: 'questions',
+            name: 'home',
             url: '/',
-            component: 'questionsList'
+            component: 'questionList'
         })
     $urlRouterProvider
         .otherwise('/');

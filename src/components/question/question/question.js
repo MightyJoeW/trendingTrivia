@@ -1,6 +1,6 @@
 
 angular.module('app').component('question', {
-    templateUrl: './question.html',
+    templateUrl: 'src/components/question/question/question.html',
     controllerAs: 'questionCtrl',
     bindings: {
         item: '<',

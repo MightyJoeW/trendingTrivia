@@ -1,20 +1,20 @@
-<div class="question-wrapper" ng-repeat="question in questions" >
+<div class="question-wrapper">
 
   <h3>
-    <!-- Question -->
+    {{questionCtrl.item.question}}
   </h3>
   <div>
-    <!-- Difficulty -->
+    {{questionCtrl.item.difficulty}}
   </div>
   <div class="gear"  >
     <img src="/styles/assets/gear.svg" alt="">
   </div>
   <ul>
-    <li>
-      <!-- Repeated for each option -->
+    <li ng-repeat="(key, val) in questionCtrl.item.question.options" >
+      {{key}}
       <input type="radio">
       <label>
-        <!-- Option text -->
+        {{val}}
       </label>
     </li>
   </ul>
