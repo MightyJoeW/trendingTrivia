@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html ng-app='app'>
+
+<html ng-app='app' >
+
 
 <head>
   <meta charset="utf-8">
@@ -37,12 +39,12 @@
     <form>
       <h4 class="close">X</h4>
       <span>Question</span>
-      <input type="text" ng-model="<!-- Question -->">
+      <input type="text" ng-model="!-- Question -->">
       <span>Animal it's about</span>
-      <input type="text" ng-model="<!-- Animal -->">
+      <input type="text" ng-model="!-- Animal -->">
       <span>Difficulty</span>
       <div class="range">
-        <input type="range" min="1" max="3" ng-model="<!-- Difficulty -->">
+        <input type="range" min="1" max="3" ng-model="!-- Difficulty -->">
 
         <h5>{{newQuestion.difficulty}}</h5>
       </div>
@@ -80,17 +82,20 @@
     </form>
   </div>
 
-
+  
 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
   <script src="./src/app.js" charset="utf-8"></script>
+
+
   <script src="./src/mainSrvc.js"></script>
   <script src="./src/components/addQuestion/addQuestion.js"></script>
-  <script src="./src/components/question/question"></script>
-  <script src="./src/components/question/questionList"></script>
+  <script src="./src/components/question/question/question.js"></script>
+  <script src="./src/components/question/questionList/questionList.js"></script>
   <script src="./src/components/NavComp/nav.js"></script>
+
 
 </body>
 
