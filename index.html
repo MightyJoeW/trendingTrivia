@@ -32,19 +32,12 @@
     </div>
 
     <!-- Questions go here -->
-<<<<<<< HEAD
     <ui-view></ui-view>
-    
-=======
-    <div>
-      <div ng-repeat="q in questions">
-        {{q.question}}
-      </div>
-
+    <div ng-repeat="question in questions" >
+      {{question.question}}
     </div>
 
 
->>>>>>> 4ef56c75a410fef480c0bb610fd5a600643a9aa0
   </article>
 
   <div class="modal" ng-show="">
@@ -99,6 +92,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
   <script src="./src/app.js" charset="utf-8"></script>
   <script src="./src/mainSrvc.js"></script>
   <script src="./src/components/addQuestion/addQuestion.js"></script>

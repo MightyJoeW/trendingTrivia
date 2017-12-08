@@ -6,6 +6,6 @@ angular.module("app", ['ui.router']).config(function($stateProvider, $urlRouterP
             component: 'questionsList'
         })
     $urlRouterProvider
-        .othewise('/');
+        .otherwise('/');
 })
 
