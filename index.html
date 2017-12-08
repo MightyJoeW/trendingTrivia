@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html ng-app='app' >
+<html ng-app='app'>
 
 
 <head>
@@ -11,7 +11,7 @@
   <link rel="shortcut icon" href="/styles/assets/crownFavicon.png">
 </head>
 
-<body>
+<body ng-controller="questionsCtrl">
   <header>
     <div></div>
     <h1>Trivia Trends</h1>
@@ -32,17 +32,28 @@
     </div>
 
     <!-- Questions go here -->
+<<<<<<< HEAD
     <ui-view></ui-view>
     
+=======
+    <div>
+      <div ng-repeat="q in questions">
+        {{q.question}}
+      </div>
+
+    </div>
+
+
+>>>>>>> 4ef56c75a410fef480c0bb610fd5a600643a9aa0
   </article>
 
   <div class="modal" ng-show="">
     <form>
       <h4 class="close">X</h4>
       <span>Question</span>
-      <input type="text" ng-model="!-- Question -->">
+      <input type="text" ng-model="!-- Question --">
       <span>Animal it's about</span>
-      <input type="text" ng-model="!-- Animal -->">
+      <input type="text" ng-model="!-- Animal --">
       <span>Difficulty</span>
       <div class="range">
         <input type="range" min="1" max="3" ng-model="!-- Difficulty -->">
@@ -83,7 +94,7 @@
     </form>
   </div>
 
-  
+
 
 
 
