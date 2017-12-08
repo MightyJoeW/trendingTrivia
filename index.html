@@ -32,11 +32,9 @@
     </div>
 
     <!-- Questions go here -->
-    <div>
-      <div ng-repeat="q in questions">
-        {{q.question}}
-      </div>
-
+    <ui-view></ui-view>
+    <div ng-repeat="question in questions" >
+      {{question.question}}
     </div>
 
 
@@ -94,9 +92,8 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
   <script src="./src/app.js" charset="utf-8"></script>
-
-
   <script src="./src/mainSrvc.js"></script>
   <script src="./src/components/addQuestion/addQuestion.js"></script>
   <script src="./src/components/question/question/question.js"></script>
