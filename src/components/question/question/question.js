@@ -1,3 +1,4 @@
+
 angular.module('app').component('question', {
     templateUrl: './../../../question.html',
     controllerAs: 'questionCtrl',
@@ -8,3 +9,4 @@ angular.module('app').component('question', {
         })
     }
 })
+
